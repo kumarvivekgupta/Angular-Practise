@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.row{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  height: 100px;
+  width: 100%;
+  background: blue;
+  align-items: center;
+  justify-content: space-around;
+  align-content: flex-end;
+
+
+}
+
+a{
+  color: azure;
+
+
+}
+
