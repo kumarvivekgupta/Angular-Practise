@@ -1,8 +1,40 @@
-<mat-tab-group >
-  <mat-tab label="Tab 1" >Java</mat-tab>
-  <mat-tab label="Tab 2">Android</mat-tab>
+<div>
+  <mat-tab-group style="margin: 15px;text-emphasis-color: red" class="mat-card" id="tabs">
+    <mat-tab style="background-color:rgba(246,178,181,0.2);color: red" label="Tab 1">
+      <button mat-button [matMenuTriggerFor]="menu1" style="background-color: transparent">Java</button>
+      <mat-menu #menu1="matMenu" [overlapTrigger]="true">
+        <i mat-menu-item [matMenuTriggerFor]="pakia">Pappu Pakia</i>
+        <i mat-menu-item>Road Rash</i>
+      </mat-menu>
+    </mat-tab>
+    <mat-tab>
+      <mat-card style="direction:initial" >
+      <mat-menu #pakia="matMenu" >
 
-  <mat-tab label="Tab 3">Angular</mat-tab>
+          <p mat-menu-item>PAPPU PAKIA</p>
+
+      </mat-menu>
+      </mat-card>
+    </mat-tab>
+    <mat-tab style="background-color:red" label="Tab 2">
+      <button mat-button [matMenuTriggerFor]="menu2" style="background-color: transparent">Android</button>
+      <mat-menu #menu2="matMenu">
+        <i>Datsme</i>
+        <i>Rail App</i>
+        <i>Emoji Animations</i>
+
+      </mat-menu>
+    </mat-tab>
 
 
-</mat-tab-group>
+    <mat-tab style="background-color:red" label="Tab 3">
+      <button mat-button [matMenuTriggerFor]="menu3" style="background-color: transparent">Angular</button>
+      <mat-menu #menu3="matMenu">
+        <i mat-menu-item>Working</i>
+
+      </mat-menu>
+    </mat-tab>
+
+
+  </mat-tab-group>
+</div>

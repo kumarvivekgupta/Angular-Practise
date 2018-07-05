@@ -5,13 +5,18 @@ import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {HomeComponent} from './home/home.component';
 import {FaqComponent} from './faq/faq.component';
+import {InfoComponent} from './info/info.component';
 
-export const appRoutes: Routes = [{
-  path: 'album', component: AlbumComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'aboutme', component: AboutComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'faq', component: FaqComponent}
+
+
+export const appRoutes: Routes = [
+  {path: '', component: InfoComponent, },
+  {path: 'album', component: AlbumComponent, },
+  {path: 'contact', component: ContactComponent, },
+  {path: 'aboutme', component : AboutComponent, },
+  {path: 'home', component : HomeComponent, },
+  {path: 'faq', component : FaqComponent, }
+
 
 
 

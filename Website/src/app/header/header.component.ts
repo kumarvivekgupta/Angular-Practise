@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, Output, ViewChild} from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  myValue: string;
+  searchbar: FormControl;
+  formGroup: FormGroup;
+  @ViewChild('search') search: ElementRef;
+
+
+  constructor() {
+    this.searchbar = new FormControl();
+    this.formGroup = new FormGroup({
+      'searchbar': this.searchbar
+  });
+    this.searchbar.valueChanges.
+      subscribe(v => this.myValue = v);
+
+  }
 
   ngOnInit() {
+
+
   }
+
+
 
 }

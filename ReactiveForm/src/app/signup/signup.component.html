@@ -1,0 +1,23 @@
+<mat-card style="width: 500px;margin-left: 20%;margin-top: 15%" >
+  <form (submit)="signUp()" class="column">
+    <mat-form-field class="detail">
+      <input matInput placeholder="username" formControlName="username">
+    </mat-form-field>
+    <mat-form-field class="detail">
+      <input matInput placeholder="email" formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="detail">
+      <input matInput placeholder="FullName" formControlName="fullname">
+    </mat-form-field>
+    <mat-form-field class="detail">
+      <input matInput placeholder="password" formControlName="password">
+    </mat-form-field>
+    <mat-form-field class="detail">
+      <input matInput placeholder="ConfirmPassword" formControlName="confirmpassword">
+    </mat-form-field>
+    <button class="mat-raised-button" type="submit" [disabled]="forms.invalid">Submit</button>
+  </form>
+  <br>
+  <span style="font-family: Dialog">Already Have a account  <span (click)="login()" style="font-size: large;font-family: sans-serif;cursor: pointer;margin-left: 10px;color: brown"> Login </span></span>
+
+</mat-card>

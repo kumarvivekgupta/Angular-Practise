@@ -1,0 +1,67 @@
+.caption{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width:100%;
+  text-align: center;
+  color: #000;
+  display: block;
+  font: 400 15px/1.8 "Lato", sans-serif;
+
+}
+.bgimg1 {
+  background-image: url("../../assets/images/portfolio1.jpg");
+  min-height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
+
+}
+body ,html{
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+
+}
+.bgimg2{
+  background-image: url("../../assets/images/nature1.jpg");
+  min-height:380px;
+  width: auto;
+
+}
+.bgimg1 .bgimg2 .bgimg3{
+  position: absolute;
+  opacity: 0.65;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  flex: 0 0 auto;
+
+}
+.bgimg3{
+  background-image: url("../../assets/images/comp1.jpg");
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+div{
+  display: block;
+}
+.parallax{
+  background-image: radial-gradient(circle, #100537, #004085, #007cb0, #00b79d, #12eb56);
+}
+
+
+

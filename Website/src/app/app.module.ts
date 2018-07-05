@@ -11,9 +11,21 @@ import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {FaqComponent} from './faq/faq.component';
-import {MatCardModule, MatTabGroup, MatTabsModule} from '@angular/material';
+import {
+  MatCardModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+  MatTabGroup,
+  MatTabsModule
+} from '@angular/material';
 import {TabComponent} from './home/tab/tab.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { InfoComponent } from './info/info.component';
+
 
 @NgModule({
   declarations: [
@@ -25,15 +37,28 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     ContactComponent,
     AboutComponent,
     FaqComponent,
-    TabComponent
+    TabComponent,
+    InfoComponent,
+
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     MatCardModule,
 FlexLayoutModule,
-    MatTabsModule
+    MatTabsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatMenuModule,
+    MatMenuModule,
+    
+
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })

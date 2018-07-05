@@ -1,4 +1,19 @@
 .address{
   text-underline-color: darkblue;
   text-decoration-color: aqua;
+
+}
+.contact{
+  background-image:url("../../assets/images/portfolio1.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size:cover;
+  opacity: 0.5%;
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+
 }

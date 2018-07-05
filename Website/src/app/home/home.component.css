@@ -1,0 +1,8 @@
+.home{
+  background-image:url("../../assets/images/portfolio1.jpg");
+ z-index: -1;
+ background-position-x: left;
+  background-position-y: top;
+
+
+}

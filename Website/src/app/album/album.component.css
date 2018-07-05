@@ -1,18 +1,62 @@
-.image{
+#image1,#image2,#image3,#image4{
+ image-resolution: snap;
+transform: skew(15deg) scale(0.7);
 
-width: 50px;
-  height: 50px;
-  image-resolution: normal;
+}
+#image1 #image2 #image3 #image4:hover{
+  transform:translateZ(20px) skew(20deg) ;
+
+
+
+
+}
+
+.row{
   display: flex;
+  flex-wrap: wrap;
 
 
+  flex: 0 0 50px;
+}
+.image-container{
 
-
- flex-wrap: wrap;
+  align-items: left;
+  align-self: left;
+  backface-visibility: visible;
+  background-image: url("../../assets/images/portfolio1.jpg");
+  z-index: -1;
+  background-size: cover;
+  position: absolute;
 
 
 }
-.image>* {
-  flex: 1 1 80px;
+.text{
+  rotation-point: center;
+  rotation: 10deg;
+  transform:rotateY(20deg);
+
 }
+
+
+
+
+
+.image{
+ height: 50%;
+  margin: 20px;
+
+}
+@keyframes wigger  {
+  0%{
+    transform: skew(10deg) scale(0.7);
+  }
+  50%{
+    transform: skew(-20deg) scale(0.7);
+  }
+  100%{
+    transform: skew(20deg) scale(0.7);
+  }
+
+}
+
 
